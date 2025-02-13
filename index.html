@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Cats Game</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+    <h1 id="game-title">🩷🐈‍⬛🐈Pet the Cats🐈🐈‍⬛🩷</h1>
+
+    <button id="start-button">start</button>
+    
+    <p id="paragraph">How to play?? Just use WASD keys to move towards the cat yipeeee! You got 60 sec! </p>
+
+    <canvas id="gameCanvas" width="600" height="400" style="display: none;"></canvas>
+
+    <button id="mute-button" style="display: none;">Mute Music</button>
+
+    <div id="score" style="display: none;">cars petted: 0</div>
+    <div id="timer" style="display: none;">Time: 60</div>
+
+    <div id="game-over" style="display: none;">
+        Tadaaa!<br> 
+        Time's over!<br>
+        Let's see how many cats you petted? : 
+        <span id="final-score"></span><br>
+        Wahhhhh,<br>
+        Cats love you!<br> 
+        Just like Meeeee🩷
+    </div>
+
+    <div id="video-container" style="display: none;">
+        <video id="video" width="600" controls>
+            <source src="videos/endgame.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

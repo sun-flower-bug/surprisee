@@ -1,0 +1,143 @@
+/* style.css */
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+}
+#start-button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #fe8ef3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+#start-button:hover {
+    background-color: #b71ba2;
+}
+
+#gameCanvas, #score, #timer, #mute-button {
+    display: none; /* Hide game elements initially */
+}
+
+
+canvas { 
+    border: 2px solid rgb(0, 200, 255);
+    background-color: #00012b;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+
+p  {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#score, #timer {
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 20%;
+    font-size: 24px;
+}
+
+#score {
+    text-align: right;
+    color: white;
+    right: 20px;
+    top: 25%;
+}
+
+#timer {
+    color: white;
+    right: 20px;
+    top: 20%;
+
+}
+
+#game-over {
+    font: serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* ✅ Center the text properly */
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);  /* ✅ Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mute-button {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5dceff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#mute-button:hover {
+    background-color: #0032c7;
+}
+
+#video-container {
+    display: none;
+    position: fixed;  /* Ensures it stays in place */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure it appears on top of everything */
+}
+
+#video-container video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
